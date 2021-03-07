@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--By: Joel Reid
+    Completion date: 3/6-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Lab 2">
+        <meta name="keywords" content="Wireframe">
+        <meta name="author" content="Joel Reid">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>  
+
+            header{
+                text-align: center;
+            }   
+            body{
+                margin-left: 5%;  
+                margin-right: 5%;
+                         
+            }            
+            aside{
+                float: left;
+            }
+            #text{
+                margin-left: 43%;
+            }
+            li{
+                font-size: 18pt;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Brookfield Zoo Website Wireframe</h1>
+        </header>       
+            <aside>
+                <img src="./wireframe/wireframe.png" alt="high fidelity wireframe" height="880">
+            </aside>
+        <div id="text">    
+            <h2>Recommendations for site preformance</h2>
+            <ol>
+                <li>Add Expires headers. Expires headers allow components that require http requests to be cached, meaning less http requests the following times the site is loaded.</li>
+                <li>Compress components. Using gzip, compressing compontents will reduce their size in turn taking less time to load them.</li>
+            </ol>
+            <h2>Recommendations for site accessibility</h2>
+            <ol>
+                <li>Add alt tags to images. Alt tags will describe the image to a user that cannot load or cannot see the image, and will help search engines catagorize your image.</li>
+                <li>Add lang attribute to html tag. Identifying the lang attribute as "en" will allow screen readers to read content in the correct language.
+                     This will also allow for automatic translation of content</li>
+            </ol>
+        </div>
+        
+    </body>
+</html>
